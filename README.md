@@ -9,6 +9,7 @@ This repository is now set up as a Chrome extension (Manifest V3).
   - `backup`
   - `simple_response`
 - Clears `localStorage.qla_events` when `#submit_quiz_button` is clicked.
+- Adds an extension popup that shows whether the extension is active for the current tab.
 
 ## Install in Chrome
 

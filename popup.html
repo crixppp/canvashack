@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CanvasHack Status</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #11151b;
+        color: #e8eef5;
+        width: 260px;
+        padding: 14px;
+      }
+      .row { display: flex; align-items: center; gap: 8px; }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #8b949e;
+      }
+      .active { background: #3f8a35; }
+      .inactive { background: #b94949; }
+      .hint { margin-top: 8px; color: #b8c0cb; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <span id="status-dot" class="dot"></span>
+      <strong id="status-text">Checking status…</strong>
+    </div>
+    <div id="status-hint" class="hint"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
