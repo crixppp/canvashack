@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "CanvasHack Request Guard",
+  "version": "1.0.0",
+  "description": "Blocks selected Canvas AJAX endpoints and clears qla_events on quiz submit.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.instructure.com/*",
+        "*://canvas.*/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
